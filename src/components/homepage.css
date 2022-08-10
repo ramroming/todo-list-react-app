@@ -1,0 +1,86 @@
+.home-page{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(116.49deg, #FFEE51 12.84%, rgba(255, 236, 67, 0.59) 50.86%, rgba(255, 251, 150, 0.684112) 84.77%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.add-edit-input{
+  padding: .5rem 1rem;
+  border: 1px solid gray;
+  border-radius: .5rem;
+  font-size: 2rem;
+  /* margin-top: -20rem; */
+  position: absolute;
+  top: 2rem;
+  outline: none;
+}
+
+
+.todos{
+  /* margin-top: 5rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* align-items: center;
+  justify-content: center; */
+}
+.todo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width:100%;
+}
+
+.todo h1{
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  padding: .5rem 1rem;
+  box-shadow: 2px 7px 17px 0px rgba(0,0,0,0.2);
+}
+
+.add-confirm-icon{
+  position: absolute;
+  transform: scale(2);
+  top: 3rem; 
+  right: 32rem;
+  cursor: pointer;
+}
+
+.edit-icon,.delete-icon{
+  transform: scale(2);
+  cursor: pointer;
+}
+
+.sign-out-icon{
+  position: absolute;
+  cursor: pointer;
+  transform: scale(2);
+  top: .5rem;
+  right: .5rem;
+}
+
+@media screen and (max-width: 1502px) {
+  .add-confirm-icon{
+    top: 3rem; 
+    right: 10rem;
+  }
+}
+@media screen and (max-width: 810px) {
+  .add-confirm-icon{
+    right:5rem;
+  }
+  .add-edit-input{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 538px) {
+  .add-confirm-icon{
+    right: 2rem;
+  }
+} 
